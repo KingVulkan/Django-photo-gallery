@@ -9,10 +9,10 @@ from .models import Image,Category,Location
 def welcome(request):
     return render(request, 'welcome.html')
 
-def gallerys_today(request):
+def gallery_today(request):
     date = dt.date.today()
-    gallerys = Image.today_gallerys()        
-    return render(request, 'all_gallerys/today-gallerys.html', {"date": date,"gallerys":gallerys})
+    gallery = Image.today_gallery()        
+    return render(request, 'all_gallery/today-gallery.html', {"date": date,"gallery":gallery})
 
 def convert_dates(dates):
     #function that gets the weekday number for the date
@@ -24,7 +24,7 @@ def convert_dates(dates):
     day = days[day_number]
     return day 
 
-def past_days_gallerys(request,past_date):
+def past_days_gallery(request,past_date):
 
     try:
         date = dt.datetime.strptime(past_date, '%Y-%m-%d').date()
@@ -33,10 +33,10 @@ def past_days_gallerys(request,past_date):
         raise Http404()    
     #converts data from the string url
     if date == dt.date.today():
-        return redirect (gallerys_of_today)
+        return redirect (gallery_today)
     
-    gallerys = Image.days_gallerys(date)
-    return render(request, 'all-gallerys/past-gallerys.html',{"date": date,"gallerys": gallerys})
+    gallery = Image.days_gallery(date)
+    return render(request, 'all-gallery/past-gallery.html',{"date": date,"gallery": gallery})
 
 def search_results(request):
     if 'image' in request.GET and request.GET['image']:
@@ -44,18 +44,18 @@ def search_results(request):
         searched_images = Image.search_by_category(search_term)
         message = f"{search_term}"
 
-        return render(request, 'all_gallerys/search.html',{"message":message,"images": searched_images})
+        return render(request, 'all_gallery/search.html',{"message":message,"images": searched_images})
     else:
         message = "you haven't searched for any term"
-        return render(request, 'all_gallerys/search.html',{"message":message})  
+        return render(request, 'all_gallery/search.html',{"message":message})  
 
 def category_image(request):
-    gallerys = Category.images()   
-    for x in gallerys:
+    gallery = Category.images()   
+    for x in gallery:
         print(x.image_upload)    
-    return render(request, 'all_gallerys/category.html', {"gallerys":gallerys})
+    return render(request, 'all_gallery/category.html', {"gallery":gallery})
 
 def location(request,location_id):
     locations = Image.objects.filter(location_id=location_id)
-    return render(request, 'all_gallerys/location.html', {"locations":locations})
+    return render(request, 'all_gallery/location.html', {"locations":locations})
 
