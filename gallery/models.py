@@ -34,7 +34,7 @@ class Location(models.Model):
         return self.name
     
     @classmethod
-    def today_gallerys(cls):
+    def today_gallery(cls):
         location = cls.objects.filter(name = today)
         return location
 
@@ -61,18 +61,18 @@ class Image(models.Model):
     
     @classmethod
     def search_by_category(cls,search_term):
-        gallerys = cls.objects.filter(category__name__icontains=search_term).all()
-        return gallerys
+        gallery = cls.objects.filter(category__name__icontains=search_term).all()
+        return gallery
 
     @classmethod
     def search_by_category(cls,search_term):
-        gallerys = cls.objects.filter(category__name__icontains=search_term).all()
-        return gallerys
+        gallery = cls.objects.filter(category__name__icontains=search_term).all()
+        return gallery
 
     def __str__(self):
         return self.title
     @classmethod
-    def today_gallerys(cls):
+    def today_gallery(cls):
         today = dt.date.today()
         galleries = cls.objects.filter(pub_date__date = today)
         return galleries
