@@ -2,7 +2,7 @@
 {% block content %}
 <p>u searched for the wrong category</p>
 <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-{% for image in gallerys %}
+{% for image in gallery %}
 <img src="{{image.image_upload.url}}" class="image-responsive" alt="Image">
 {% endfor %}
 {% endblock %}
