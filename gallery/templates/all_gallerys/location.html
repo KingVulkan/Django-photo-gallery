@@ -32,7 +32,7 @@
                  <div class="row">
                        <div class="col-md-2">
                  <form>
-                 <a onclick="copyLink({{gallerys_item.id}})"><button type="button" class="btn btn-outline-dark my-2 my-sm-0 link-btn">{{gallerys_item.image_upload.ur}}Copy this image</button></a>
+                 <a onclick="copyLink({gallerys_item,id})"><button type="button" class="btn btn-outline-dark my-2 my-sm-0 link-btn">{{gallerys_item.image_upload.ur}}Copy this image</button></a>
                  <input class="form-control" type="text" value="http://127.0.0.1:8000{{gallerys_item.image_upload.url}}" id="thislinkhere-{{gallerys_item.id}}">
                  </a>
                  </form>

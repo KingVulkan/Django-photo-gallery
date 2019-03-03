@@ -1,0 +1,124 @@
+{%extends 'all_gallerys/base.html'%}
+{% block content %}
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+{{block.super}}
+<div class="container-fluid">
+<div class="text" id="container1">
+<hr>
+<h4 id ="text"> EL' ARTE GALLERY<h4> 
+<hr> 
+<p id="text">Art is not what you see its what you make others see</p>
+<hr>
+</div>
+<div class="text" id="container2">
+<h4 id ="text"> Welcome<h4> 
+<hr id="hr2"> 
+<p id="text2">Any art lover can recognize and be inspired by a painting<br>
+from one of history’s most famous art masters, Claude Monet.<br>
+ His paintings depict a variety of landscapes and architecture,<br>
+  including his pieces entitled</p>
+  <br>
+</div>
+<div class = "container-fluid" id="row3">
+      <div class="row" id="row4">
+            {% for gallerys_item in gallerys %}  
+                  <div class="col-md-4">
+                        <div class="card" id="card1">
+                        <img src="{{gallerys_item.image_upload.url}}" class="image-responsive" alt="Image" data-toggle="modal" data-target="#{{gallerys_item.id}}" height="300px" width="300px">  
+                        <p>This photo was taken in:{{gallerys_item.location}}   </p>
+                        </div>
+                  </div>
+                        <!-- Modal -->
+                        <div class="modal fade" id="{{gallerys_item.id}}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                             <div class="modal-dialog" role="document">
+                                   <div class="modal-content" id="modal">
+                                    <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLongTitle">{{ gallerys_item.title }}</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                    </button>
+                                    </div>
+                                    <div class="modal-body">
+                                    <img src="{{gallerys_item.image_upload.url}}" class="image-responsive" alt="Image"  height="700px" width="700px">
+                                    </div>
+                                    <div class="modal-footer">
+                                    <h2 class="text-centre"> Title:{{ gallerys_item.title }}</h2>
+                                    <h2 class="text-centre"> Name:{{ gallerys_item.image_name }}</h2>
+                                    <hr>
+                                    <div class="row">
+                                          <div class="col-md-2">
+                                    <form>
+                                    <a onclick="copyLink({gallerys_item,id})"><button type="button" class="btn btn-outline-dark my-2 my-sm-0 link-btn">{{gallerys_item.image_upload.ur}}Copy the link</button></a>
+                                    <input class="form-control" type="text" value="http://127.0.0.1:8000{{gallerys_item.image_upload.url}}" id="thislinkhere-{{gallerys_item.id}}">
+                                    </a>
+                                    </form>
+                              </div>
+                        </div>
+                                    </div>
+
+                              </div>
+                              </div>
+                        </div>
+                        {% empty %}
+                        <div class="row">
+                        <h2 class="text-centre">There is No gallerys item here </h2>
+                        </div>
+                  
+            {% endfor %}
+      </div>      
+</div>
+        <script>
+            function copyLink(id) {
+              /* Get the text field */
+              var copyText = document.getElementById( "thislinkhere-" + id );
+        
+              /* Select the text field */
+              copyText.select();
+        
+              /* Copy the text inside the text field */
+              document.execCommand( "copy" );
+        
+              /* Alert the copied text */
+              alert( "COPY THIS LINK AND SHARE!!: " + copyText.value );
+            }
+          </script>
+                  <div class="container-fluid">
+                        <div class="row" id="row5">
+                              <div class="well" id="container3">
+                                    <form >
+                                      <h4 id="text5">Contact Us</h4>
+                                      <br>
+                                      <div class="wrapper">
+                                                <ul>
+                                                    <a href="https://www.facebook.com/NayiomaAurelia" ><li class="facebook"><i class="fa fa-facebook fa-2x" aria-hidden="true"></i></li></a>
+                                                    <a href="https://www.instagram.com/aurelia_nayioma" target="_blank"><li class="instagram"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></li></a>
+                                                    <a href="https://www.github.com/nayioma" ><li class="whatsapp"><i class="fa fa-github fa-2x" aria-hidden="true"></i></li></a>
+                                                </ul>
+                                                </div>
+                                      <p id="text5">Email:lankas.aurelia@gmail.com</p>
+                                      <p id="text5">PhoneNumber:0702781830</p>    
+                                      <label for="fname" id="text5">Name</label>
+                                      <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                                          <br>
+                                    <label for="lname"id="text5">Email</label>
+                                    <input type="text" id="lname" name="lastname" placeholder="Your email...">
+                                   <br>
+                                       <label for="country"id="text5">Country</label>
+                                      <select id="country" name="country">
+                                        <option value="australia">Kenya</option>
+                                        <option value="canada">Tanzania</option>
+                                        <option value="usa">Uganda</option>
+                                      </select> 
+                                      <br>
+                                      <button type="submit" value="Submit" class="button">submit</button> 
+                                    </form>
+                                  </div>
+                                       
+                                 
+                              </div>
+                            </div>
+                        
+                        </div>
+                           
+{% endblock %}
