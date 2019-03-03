@@ -62,7 +62,7 @@ class ImageTestClass(TestCase):
         self.manow.save_category()
 
         #creating a new insatance of location and saving it
-        self.new_location=Location(name="kisumu")
+        self.new_location=Location(name="japan")
         self.new_location.save()
 
         #creating a new instance of image and saving it
