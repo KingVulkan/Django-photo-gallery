@@ -4,6 +4,8 @@ h1{
 .navbar{
     background-color: #eb7b12;
     color: rgb(14, 11, 11) ;
+    font-size: 20px;
+    font-family: 'Dancing Script'; 
 
 }
 #container1{
@@ -72,11 +74,16 @@ li a:hover {
     left: 900px;
     
 }
+#text{
+    font-size: 200%;
+    font-family: 'Dancing Script'; 
+}
 #text2{
     color: rgb(8, 21, 32);
     text-align: center;
     line-height: 1.5;
-    font-size: 100%;
+    font-size: 150%;
+    font-family: 'Dancing Script'; 
 }
 #hr2{
     display: block;
