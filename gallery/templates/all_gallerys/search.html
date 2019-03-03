@@ -1,8 +1,8 @@
 {%extends 'all_gallerys/base.html'%}
 {% block content%}
-<h1>Search</h1>
+
 <div class="row">
-    <p>search</p>
+    
 {% for image in images %}
    <div class="col-md-6">
        
@@ -12,7 +12,7 @@
     </div>
     {% empty %}
     <div class="row" id="notfound">
-    <h1 class="text-centre"> ...Hey!!! you have searched for a category that doesnt exist!!!</h1>
+    <h1 class="text-centre"> ...Hey!!! You have searched for a category that doesnt exist! Search for anime </h1>
     </div>
 {% endfor %}
 </div>
