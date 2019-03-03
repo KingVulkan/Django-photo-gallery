@@ -1,0 +1,354 @@
+h1{
+    color: yellow;
+}
+.navbar{
+    background-color: #eb7b12;
+    color: rgb(14, 11, 11) ;
+
+}
+#container1{
+    background-image: url("https://i.ebayimg.com/images/i/222738679747-0-1/s-l1000.jpg");   
+    background-repeat: no-repeat;
+    padding: 200px;
+    background-size: 100% 100%;
+    background-position: center center;
+   
+}
+#container2
+{
+    background-color: #eb7b12;
+    
+    
+}
+.col-md-3{
+    background-color: aqua;
+    float: left;
+    margin-bottom: 50%;
+    left: 25%
+}
+hr{
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 1px;
+    width: 50%;
+    background-color: #990000;
+}
+
+#text{
+    color: rgb(14, 11, 11);
+    text-align: center;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: inline-block;
+
+}
+li {
+    display: inline-block;
+
+}
+
+li a {
+    display: inline-block;
+    color: rgb(14, 11, 11);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: grey;
+}
+#search{
+    float: left;
+    position: absolute;
+    left: 900px;
+    
+}
+#text2{
+    color: rgb(8, 21, 32);
+    text-align: center;
+    line-height: 1.5;
+    font-size: 100%;
+}
+#hr2{
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 1px;
+    width: 35%;
+    background-color: black;
+}
+
+#row4{
+    background-image: url("https://www.htmlcsscolor.com/preview/gallery/D8CACA.png");
+    align-content: centre;
+
+}
+#card1{
+    width: 110%; 
+    height: 390px;
+    bottom: 20px;
+    transition: 1s;
+    margin: 15px 15px;
+    padding: 50px;
+    border-radius: 2px;
+    align-content: center;
+    
+}
+#card1:hover{
+    transform: scale(1.3);
+    background: rgb(109, 106, 107);
+    box-shadow: 2px 2px 2px rgb(109, 106, 107) ;
+    z-index: 2;
+}
+#row5{
+    background-repeat: no-repeat;
+    background-color: #000;
+    height: 360px;
+    background-size: cover;
+}
+#location-container{
+    background-repeat: no-repeat;
+    height: 700px;
+    background-size: cover;
+}
+#column4{
+    padding:10px;
+    float: left; 
+    top: 100px; 
+    left: 50px;
+}
+#locationrow{
+    left: 50%;
+}
+ 
+#container3{
+    background-color: #202020;
+    position: absolute;
+    top: 1080px;
+    left: 25%;
+    width: 40%;
+    opacity: 0.7;
+}
+#hrc{
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 1px;
+    width: 50%;
+    background-color: #202020; 
+}
+.wrapper {
+    position: absolute;
+    top: 94%;
+    left: 79%;
+    transform: translate(-50%, -50%);
+    width: 550px;
+  }
+  
+  /* Style the Un-order list by setting its list-style to none */
+  .wrapper ul {
+    list-style: none;
+  }
+  
+  /* Style the list items inside the UL list, by setting its width, height and line-height 
+    and float them to left and set its border and border-radius.
+   */
+  .wrapper ul li {
+    width: 50px;
+    height: 50px;
+    line-height: 60px;
+    margin: 0 10px;
+    text-align: center;
+    font-size: 90%;
+    align-content: center;
+    cursor: pointer;
+    border-radius: 20%;
+    border: 2px solid #CCE5FF;
+    float: left;
+    right: 50%;
+    transition: all 0.3s ease;
+  }
+  
+  /* Style the icons by setting its color and margin-top value to 20px 
+  to align it properly */
+  .wrapper ul li .fa {
+    color: #D8E2DC;
+    margin-top: 20px;
+    transition: all 0.5s ease;
+  }
+  
+  /* Now target the specific li classes for styling and use box-shadow effect to border and text-shadow effect
+    to icons for glowing effect and use transition property for smooth transition effect. */
+  /*facebook*/
+  .wrapper ul li:hover.facebook {
+    border: 5px solid #3b5998;
+    box-shadow: 0 0 15px #3b5998;
+    transition: all 0.3s ease;
+  }
+  
+  .wrapper ul li:hover .fa-facebook {
+    color: #3b5998;
+    text-shadow: 0 0 15px #3b5998;
+    transition: all 0.5s ease;
+  }
+  
+  /*twitter*/
+  .wrapper ul li:hover.twitter {
+    border: 5px solid #00aced;
+    box-shadow: 0 0 15px #00aced;
+    transition: all 0.5s ease;
+  }
+  
+  .wrapper ul li:hover .fa-twitter {
+    color: #00aced;
+    text-shadow: 0 0 15px #00aced;
+    transition: all 0.5s ease;
+  }
+  
+  /* instagram */
+  .wrapper ul li:hover.instagram {
+    border: 5px solid #bc2a8d;
+    box-shadow: 0 0 15px #bc2a8d;
+    transition: all 0.5s ease;
+  }
+  
+  .wrapper ul li:hover .fa-instagram {
+    color: #bc2a8d;
+    text-shadow: 0 0 15px #bc2a8d;
+    transition: all 0.5s ease;
+  }
+  
+  /* google */
+  .wrapper ul li:hover.google {
+    border: 5px solid #dd4b39;
+    box-shadow: 0 0 15px #dd4b39;
+    transition: all 0.5s ease;
+  }
+  
+  .wrapper ul li:hover .fa-google {
+    color: #dd4b39;
+    text-shadow: 0 0 15px #dd4b39;
+    transition: all 0.5s ease;
+  }
+  
+  /* whatsapp */
+  .wrapper ul li:hover.whatsapp {
+    border: 5px solid #4dc247;
+    box-shadow: 0 0 15px #4dc247;
+    transition: all 0.5s ease;
+  }
+  
+  .wrapper ul li:hover .fa-whatsapp {
+    color: #4dc247;
+    text-shadow: 0 0 15px #4dc247;
+    transition: all 0.5s ease;
+  }
+  
+  
+  /* media queries */
+  
+  @media screen and (max-width: 640px){
+    .wrapper {
+        width: 350px;
+    }
+    .wrapper ul li{
+        margin-top: 10px;
+    }
+    .wrapper ul li.google{
+        margin-left: 60px;
+    }
+  }
+  
+  
+  @media screen and (max-width: 340px){
+    .wrapper {
+        width: 150px;
+    }
+    .wrapper ul li{
+        margin:15px;
+    }
+    .wrapper ul li.google{
+        margin-left: 15px;
+    }
+  }
+    
+  .contact{
+      color: #CCFFE5;
+      text-align: center;
+      line-height: 60%;
+      font-size: 120%;      
+}
+#text5{
+    color: white;
+}
+.button{
+    width: 20%;
+    height: 20%;
+    color: white;
+    box-shadow: 0 0 0 3px white inset;
+    background: transparent;
+    border-radius: 5%;
+}
+#modal{
+    
+    width: 150%;
+}
+.well{
+    color: #ccc;
+}
+
+#body-container{
+    padding: 0px;
+}
+@media screen and (max-width:700px){
+    #body-container{
+        width: 100%;
+    }
+    #container1{
+        width: 700px;
+    }
+    .col-md-4{
+        width: 100%;
+    }
+
+}#card1{
+    width: 100%;
+}
+
+@media (min-width: 300px){
+    p{
+        font-size: 1.5rem;
+        line-height: 1.5rem;
+    }
+
+    h4{
+        font-size: 1.5rem;
+        line-height: 1.5rem;
+    }
+}
+#notfound{
+background-repeat: no-repeat;
+height: 700px;
+width: 100%;
+background-size: cover;
+}
+.text-centre{
+    color: #000;
+    text-align:center;
+    text-shadow: 3px 2px yellow;
+}
