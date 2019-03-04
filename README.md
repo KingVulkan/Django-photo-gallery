@@ -1,4 +1,5 @@
 # Django-photo-gallery
+
 A personal Django-photo-gallery application that displays my photos for others to see.
 
 ##Author
@@ -56,9 +57,11 @@ Django
 Postgres
 javascript
 
-Known Bugs
-the website does not function well on explorer and heroku
-License
+##Known Bugs
+The website does not function well on explorer and heroku
+
+##License
+
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE Copyright (c) {2018} {By Abdulrahman Abdullahi}
 
 ##live link to Heruko 
