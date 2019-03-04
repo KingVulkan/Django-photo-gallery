@@ -2,11 +2,11 @@
 
 A personal Django-photo-gallery application that displays my photos for others to see.
 
-##Author
+## Author
 
 Abdulrahman Abdullahi Omar
 
-##Setup/Installation Requirements
+## Setup/Installation Requirements
 
 Python version should be 3.6 -Django version 1.11 pip install django==1.11
 Additionally, you’ll need to make sure you have pip available. You can check this by running:
@@ -27,13 +27,14 @@ Type git clone, and then paste the URL you copied in Step 2.
 git clone https://github.com/naiyoma/gallery.git Press Enter.
 #creating a database
 
-Psql
+## Psql
+
 CREATE DATABASE gallery
 connect to the database \c gallery
 check if tables have been created \dt
 
 
-Run migrations
+## Run migrations
 
 python3.6 manage.py migrate
 python3.6 manage.py makemigrations gallerys
@@ -45,11 +46,12 @@ python3.6 manage.py runserver
 
 python3.6 manage.py test gallery
 
-##SPECIFICATIONS
+## SPECIFICATIONS
 
 | Behaviour | Input | Output | | :---------------- | :---------------: | ------------------: | | Display Images| On the Landing Page| user can view different Images | Image expand | * On the Landing Page*| user can click on an image to view more details| | As An Admin Sign in| * On The Admin Dashboard*| Post images|
 
-##Technologies Used
+## Technologies Used
+
 HTML
 CSS
 Python
@@ -57,14 +59,15 @@ Django
 Postgres
 javascript
 
-##Known Bugs
+## Known Bugs
+
 The website does not function well on explorer and heroku
 
-##License
+## License
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE Copyright (c) {2018} {By Abdulrahman Abdullahi}
 
-##live link to Heruko 
+## live link to Heruko 
 
 
 
