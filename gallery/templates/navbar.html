@@ -1,11 +1,14 @@
 <div class="container-fluid p-0" id="nav">
     <nav style="overflow: hidden; position: fixed; z-index: 1; top: 0; width: 100%; padding: 10px;" class="navbar navbar-expand-lg " id="nav">
       <a class="navbar-brand" href="#"></a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+      <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    
+      </button> -->
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
+            <li class="nav-item active">
+                <img src="https://discordemoji.com/assets/emoji/Sharingan.png" alt="" style="height:65px ;">
+                </li>
           <li class="nav-item active">
           <a class="navbar-brand"  href="{% url 'galleryToday' %}" >Abu Vulkan's Gallery</a>
           </li>
@@ -22,8 +25,10 @@
         </form> {% endcomment %}
          <form class="form-inline"  role="search" action="{% url 'search_results'%}" id="search">
          <div class="input-group">
-        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" name="image">
-        <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+        <!-- <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" name="image"> -->
+        <input type="search" placeholder="Search.." aria-label="Search" name="image">
+        <button type="submit"><i class="fa fa-search"></i></button>
+        <!-- <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button> -->
       </form>
         </ul>
       </div>
