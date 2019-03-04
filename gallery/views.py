@@ -36,7 +36,7 @@ def past_days_gallery(request,past_date):
         return redirect (gallery_today)
     
     gallery = Image.days_gallery(date)
-    return render(request, 'all-gallery/past-gallery.html',{"date": date,"gallery": gallery})
+    return render(request, 'all-gallerys/past-gallery.html',{"date": date,"gallery": gallery})
 
 def search_results(request):
     if 'image' in request.GET and request.GET['image']:
