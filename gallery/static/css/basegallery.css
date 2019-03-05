@@ -1,21 +1,27 @@
-h1{
-    color: yellow;
-}
 .navbar{
     background-color: #eb7b12;
     color: rgb(14, 11, 11) ;
     font-size: 20px;
     font-family: 'Dancing Script'; 
-
+    height: 120px;
+    
 }
-#container1{
+.navbar-brand{
+    font-size: 30px;
+}
+.nav-link{
+    font-size: 30px;
+}
+
+/* #container1{
     background-image: url("https://i.ebayimg.com/images/i/222738679747-0-1/s-l1000.jpg");   
     background-repeat: no-repeat;
     padding: 200px;
     background-size: 100% 100%;
     background-position: center center;
-   
-}
+    min-height: 800px ;
+    
+} */
 #container2
 {
     background-color: #eb7b12;
