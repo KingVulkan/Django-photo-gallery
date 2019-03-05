@@ -33,10 +33,10 @@ class Location(models.Model):
     def __str__(self):
         return self.name
     
-    @classmethod
-    def today_gallery(cls):
-        location = cls.objects.filter(name = today)
-        return location
+    # @classmethod
+    # def today_gallery(cls):
+    #     location = cls.objects.filter(name = today)
+    #     return location
 
     def save_location(self):
         self.save()  

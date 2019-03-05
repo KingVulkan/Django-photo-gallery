@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 {{block.super}}
 <div class="container-fluid">
-<div class="text" id="container1">
+<div class="text" id="container1" style=" background-image: url('https://i.ebayimg.com/images/i/222738679747-0-1/s-l1000.jpg');background-repeat: no-repeat; padding: 0px;  background-size: 100% 57%; background-position: center center;  min-height: 520px ; ">
 
 </div>
 <div class="text" id="container2">
@@ -45,7 +45,11 @@
                                     <div class="row">
                                           <div class="col-md-2">
                                     <form>
+<<<<<<< HEAD
                                     <a onclick="copyLink({{gallery_item.id}})"><button type="button" class="btn btn-outline-dark my-2 my-sm-0 link-btn">{{gallery_item.image_upload.url}}Copy the link</button></a>
+=======
+                                    <a onclick="copyLink({gallery_item,id})"><button type="button" class="btn btn-outline-dark my-2 my-sm-0 link-btn">{{gallery_item.image_upload.ur}}Copy the link</button></a>
+>>>>>>> b9e8e002844887f5b1d9c48b4cdf4c985bdf049d
                                     <input class="form-control" type="text" value="http://127.0.0.1:8000{{gallery_item.image_upload.url}}" id="thislinkhere-{{gallery_item.id}}">
                                     </a>
                                     </form>
@@ -58,7 +62,7 @@
                         </div>
                         {% empty %}
                         <div class="row">
-                        <h2 class="text-centre">There is No gallery item here </h2>
+                        <h2 class="text-centre">There is No gallery item here. Search for anime. </h2>
                         </div>
                   
             {% endfor %}
